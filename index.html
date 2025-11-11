@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <title>Welcome to The Matrix</title>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+      color: #696969;
+      font-family: "Courier New", monospace;
+      text-align: center;
+    }
+
+  
+    .heading_name {
+      font-size: 30px;
+      text-shadow: 
+        0 0 5px #2fe917, 
+        0 0 10px #2fe917, 
+        0 0 15px #2fe917, 
+        0 0 20px #2fe917, 
+        0 0 30px #2fe917;
+      letter-spacing: 1px;
+      border: #00FF00;
+      font-family: 'Courier New', monospace;
+    }
+
+    .marq {
+      font-size: 20px;
+      text-shadow: 
+        0 0 5px #00FF00, 
+        0 0 10px #00FF00, 
+        0 0 15px #00FF00;
+    }
+
+    a {
+      color: #00FF00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .blink {
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    marquee {
+      margin: 20px 0;
+    }
+
+    .content {
+      border: 2px solid #505a50;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    /* Pixelated Loading text */
+    .blink {
+      font-size: 20px;
+      text-shadow: 
+        0 0 5px #00FF00, 
+        0 0 10px #00FF00, 
+        0 0 15px #00FF00;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="heading_name"><h1>Welcome to The Matrix</h1></div>
+  <marquee class="marq">Enter the 90's world. Choose your destiny.</marquee>
+  <div class="content">
+    <p>The Matrix has you... Follow the white rabbit.</p>
+    <p><a href="./main.html">Enter The Matrix</a></p>
+    <p class="blink">[Loading...]</p>
+  </div>
+  <div class="second"></div>
+  <p>&copy; 1999 The Matrix</p>
+</body>
+</html>

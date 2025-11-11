@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Matrix 1999 | Retro Style</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        body {
+            background:url(./assets/matrix4et0ht.gif);
+            background-color: rgb(0, 0, 0);
+            color: #00FF00;
+            font-family: 'Pixelify Sans'; 
+            padding: 20px;
+            margin: 0;
+        }
+ 
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 150px;
+            background-color: #131413;
+            border-right: 4px solid #0F0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            z-index: 2;
+        }
+
+        .navbar-list {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .navbar-list li {
+            margin: 20px 0;
+            border: 4px solid #0F0;
+            border-radius: 5px;
+        }
+
+        .navbar-link {
+            color: #0F0;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-family: 'Pixelify Sans';
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 15px;
+            display: block;
+        }
+
+        .navbar-link:hover {
+            color: #fff;
+            background-color: #030303;
+        }
+
+        .navbar-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #0F0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .navbar-link:hover::after {
+            width: 100%;
+            left: 10;
+        }
+
+        .window {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #0a0a0a;
+            border: 2px solid #00FF00;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .title-bar {
+            background-color: #333;
+            padding: 5px;
+            color: #00FF00;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .title-bar-text {
+            color: #00FF00;
+        }
+
+        .content {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .content h2 {
+            color: #00FF00;
+            font-size: 2rem;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .neon-effect {
+            color: #00FF00;
+            text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+        }
+
+        .movie-info {
+            margin-top: 20px;
+        }
+
+        .movie-info img {
+            max-width: 100%;
+            margin-top: 20px;
+            border: 2px solid #00FF00;
+            box-shadow: 0 0 15px #00FF00;
+        }
+
+        .choices {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .choice-btn {
+            background-color: #00FF00;
+            color: black;
+            font-size: 1.2rem;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .choice-btn:hover {
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="index.html" class="navbar-link">Home</a></li>
+            <li><a href="./about.html" class="navbar-link">About</a></li>
+            <li><a href="./services.html" class="navbar-link">Services</a></li>
+            <li><a href="./contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Matrix 1999.exe</div>
+        </div>
+        <div class="window-body">
+            <div class="content">
+                <h2 class="neon-effect">The Matrix (1999)</h2>
+                <p>
+                    <strong>Director:</strong> The Wachowskis
+                </p>
+                <p>
+                    <strong>Starring:</strong> Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+                </p>
+                <p>
+                    <strong>Genre:</strong> Science Fiction, Action
+                </p>
+                <p>
+                    <strong>Released:</strong> March 31, 1999
+                </p>
+                <p>
+                    <strong>Synopsis:</strong>
+                    <span class="neon-effect">Neo</span> (Keanu Reeves) is a computer hacker who is drawn into a world
+                    of mystery when a group of rebels led by <span class="neon-effect">Morpheus</span> (Laurence
+                    Fishburne) reveals that the reality he knows is actually a simulated construct created by sentient
+                    machines to pacify and subjugate the human population, while the real world is in ruins.
+                </p>
+
+                <div class="movie-info">
+                    <img src="assets\MATRIXXXGIF.gif" alt="The Matrix Movie Poster">
+                    <p class="neon-effect">"What is real? How do you define real?"</p>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn"
+                        onclick="window.location.href='services.html'">More Info on
+                        IMDb</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

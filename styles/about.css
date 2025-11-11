@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background Styling */
+body {
+    background-color: #000;
+    color: #00FF00;
+    font-family: 'Pixelify Sans'; 
+    line-height: 1.6;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Header Section */
+header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 2px solid #00FF00;
+    position: relative;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 15px #00FF00, 0 0 30px #00FF00;
+    font-family: 'Pixelify Sans'; 
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 0 0 10px #00FF00;
+    animation: blink 1s step-end infinite;
+}
+
+/* Blinking Text Animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Main Section */
+main {
+    padding: 50px 10px;
+}
+
+.movie-posters {
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.movie {
+    position: relative;
+    width: 300px;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid #00FF00;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie .poster {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #00FF00;
+}
+
+.movie h2 {
+    color: #00FF00;
+    font-size: 1.25rem;
+    padding: 10px;
+    text-shadow: 0 0 10px #00FF00;
+}
+
+/* Footer Section */
+footer {
+    background-color: #111;
+    padding: 20px;
+    color: #00FF00;
+    border-top: 2px solid #00FF00;
+}
+
+/* Matrix Code Animation */
+.matrix-code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.5;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.code-line {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(0, 255, 0, 0.7);
+    animation: matrix-fall 3s infinite linear;
+}
+
+.code-line:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.code-line:nth-child(2) {
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.code-line:nth-child(3) {
+    left: 50%;
+    animation-delay: 2s;
+}
+
+/* Matrix Falling Code Animation */
+@keyframes matrix-fall {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .movie-posters {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+}
